@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gaming</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/master.css" />
+  </head>
+  <body>
+    <!-- start home section -->
+    <section id="homeSection" class="home">
+      <!-- start header section -->
+      <header class="main-header">
+        <img class="w-100 object-fit-cover" src="assets/images/wraper.png" alt="wrapper" />
+      </header>
+      <!-- end header section -->
+
+      <!-- start nav section -->
+      <nav class="navbar navbar-expand-lg p-2 position-sticky top-0">
+        <div class="container d-flex align-items-center justify-content-between">
+          <div class="navbar-brand d-flex align-items-center m-0">
+            <img class="me-1" src="assets/images/logo-sm.png" alt="logo" />
+            <h1 class="m-0 text-white text-uppercase fw-normal">Game Reviews</h1>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+            <ul id="categories" class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page">mmorpg</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">shooter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">sailing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">permadeath</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">superhero</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">pixel</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- end nav section -->
+
+      <!-- start main section -->
+      <main class="my-5">
+        <div class="container">
+          <div id="homeRowCards" class="row g-4"></div>
+        </div>
+      </main>
+      <!-- end main section -->
+    </section>
+    <!-- end home section -->
+
+    <!-- start details section -->
+    <section id="details" class="details position-absolute top-0 end-0 start-0 text-white d-none">
+      <div class="container px-5 mb-5">
+        <header class="details-header py-4 d-flex justify-content-between align-items-center px-3">
+          <h1 class="h3 m-0">Details Game</h1>
+          <div
+            id="exitIcon"
+            class="icon-wrapper d-flex justify-content-center align-items-center rounded-circle"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </header>
+        <div class="body d-flex gap-3 flex-column flex-md-row px-3"></div>
+      </div>
+    </section>
+    <!-- end details section -->
+
+    <!-- Start Loading Section -->
+    <section
+      id="loading"
+      class="loading d-none position-fixed top-0 end-0 bottom-0 start-0 bg-black bg-opacity-50 text-white d-flex justify-content-center align-items-center"
+    >
+      <span
+        class="loader position-relative d-flex justify-content-center align-items-center"
+      ></span>
+    </section>
+    <!-- End Loading Section -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="assets/js/index.js"></script>
+  </body>
+</html>
