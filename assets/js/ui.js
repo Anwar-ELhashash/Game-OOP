@@ -42,7 +42,9 @@ class getApi {
                 response[i].genre
               }</span>
               <span class="badge fs-10 bg-secondary bg-opacity-25 text-uppercase">${
-                response[i].platform
+                response[i].platform.length > 12
+                  ? response[i].platform.split("", 12).join("") + " ...."
+                  : response[i].platform
               }</span>
             </div>
           </div>
